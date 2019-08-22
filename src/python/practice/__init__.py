@@ -10,5 +10,4 @@ datadict = {"city": "", "country": "中国", "groupid": 0,
              "unionid": "oITCTv6NlWf03McBVienBQSQoOsQ"}
 print json.dumps(datadict, ensure_ascii=False, sort_keys=True, indent=4, separators=(',', ':'))
 print "黄建强在Temp上的更改"
->>>>>>> ad9b181659f1bbaa6e461796813d1a35f4e575f2
 print "\n{0:=^111}\n".format("分割线")
