@@ -9,5 +9,6 @@ datadict = {"city": "", "country": "中国", "groupid": 0,
              "remark": "", "sex": 2, "subscribe": 1, "subscribe_time": 1522822271,
              "unionid": "oITCTv6NlWf03McBVienBQSQoOsQ"}
 print json.dumps(datadict, ensure_ascii=False, sort_keys=True, indent=4, separators=(',', ':'))
-print "正式目录下的更新"
+print "黄建强在Temp上的更改"
+>>>>>>> ad9b181659f1bbaa6e461796813d1a35f4e575f2
 print "\n{0:=^111}\n".format("分割线")
