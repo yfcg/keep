@@ -1,13 +1,20 @@
 # !/usr/bin/env python
 # encoding:utf-8
 
-import time
+import wordcloud
+import jieba
 
-f = open('/Users/huangjianqiang/Desktop/file_test.txt', 'w')
-f.write("中国是一个伟大的国家！")
-# f.seek(2)
-i = 1
-while i < 31:
-    time.sleep(1)
-    print "休眠{}秒".format(i)
-    i += 1
+
+f = open('/Users/huangjianqiang/Desktop/gov_reprot.txt', 'r')
+rpt = f.read()
+f.close()
+
+ls = jieba.lcut(rpt)
+
+txt = " ".join(ls)
+
+wc = wordcloud.WordCloud(scale=4,font_path="/System/Library/fonts/PingFang.ttc",width=600,height=400,background_color="white",max_words=20)
+
+wc.generate(txt)
+
+wc.to_file("/Users/huangjianqiang/Desktop/wcimage.jpg")
