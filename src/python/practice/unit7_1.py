@@ -17,4 +17,8 @@ wc = wordcloud.WordCloud(scale=4,font_path="/System/Library/fonts/PingFang.ttc",
 
 wc.generate(txt)
 
+str = "{:=^20}".format("分割线")
+
+print type(str)
+
 wc.to_file("/Users/huangjianqiang/Desktop/wcimage.jpg")
